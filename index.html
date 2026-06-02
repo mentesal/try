@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOE Result Verification</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Times New Roman", serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Header */
+.header{
+    background:#001f87;
+    padding:15px;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+.header h1{
+    font-size:28px;
+    font-weight:normal;
+}
+
+/* Card */
+.container{
+    max-width:700px;
+    margin:25px auto;
+    padding:20px;
+}
+
+.card{
+    background:#171717;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(255,255,255,0.05);
+    position:relative;
+}
+
+.verified{
+    text-align:center;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.check{
+    color:#25dba5;
+    font-size:55px;
+    margin-left:10px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #0066ff;
+    object-fit:cover;
+}
+
+.info{
+    margin-top:40px;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+    border-bottom:1px solid #888;
+}
+
+.label{
+    width:40%;
+    font-size:24px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.value{
+    width:50%;
+    font-size:22px;
+    line-height:1.5;
+}
+
+/* Footer */
+.footer{
+    margin-top:30px;
+    background:#001f87;
+    text-align:center;
+    padding:15px;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+    .verified{
+        font-size:32px;
+    }
+
+    .profile img{
+        width:150px;
+        height:150px;
+    }
+
+    .row{
+        flex-direction:row;
+    }
+
+    .label{
+        font-size:18px;
+    }
+
+    .value{
+        font-size:18px;
+    }
+
+    .header h1{
+        font-size:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <img src="logo.png" class="logo" alt="MOE Logo">
+    <h1>Ministry of Education</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+
+        <div class="verified">
+            User Verified <span class="check">✔</span>
+        </div>
+
+        <div class="profile">
+            <img src="profile.jpg" alt="Student Photo">
+        </div>
+
+        <div class="info">
+
+            <div class="row">
+                <div class="label">Full Name:</div>
+                <div class="value">
+                    EPHREM<br>
+                    MANDEFRO<br>
+                    WOLDEMESKEL
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Username:</div>
+                <div class="value">RQE01452418</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Gender:</div>
+                <div class="value">Male</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Institution:</div>
+                <div class="value">WOLKITE UNIVERSITY</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Exam Topic:</div>
+                <div class="value">Social Science</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Exam Center:</div>
+                <div class="value">
+                    Wolkite University<br>
+                    - WOLKITE - MAIN
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    © 2025 Ministry of Education. All rights reserved.
+</div>
+
+</body>
+</html>
